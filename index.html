@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <style>
+        .contener{
+            height: 97vh;
+            width: 99vw;
+            margin: 0px;
+            padding: 0px;
+            background:linear-gradient(120deg, rgb(236, 62, 233),rgb(183, 209, 16));
+        }
+        .content{
+            
+            width: 100%;
+        }
+        .content h1{
+            font-size: 50px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .el{
+            position: absolute;
+            bottom:50%;
+            left: 65%;
+            /* background-color: #f0f; */
+            width: 25%;
+            height: 20%;
+        }
+        #inp{
+            margin-left: 5%;
+            width: 90%;
+            height: 35%;
+            border: 1px solid black;
+            background-color: transparent;
+            font-size: large;
+            font-weight: 500;
+            
+        }
+        .bt{
+            /* background-color: #faf; */
+            width: 100%;
+            height: 30%;
+            display: flex;
+            margin-top: 5%;
+        }
+        .btn{
+            width: 50%;
+            height: 100%;
+            background-color: transparent;
+            color: green;
+            border: 1px solid green;
+            font-size: large;
+            font-weight: 700;
+            border-radius: 30%;
+            margin: 0px 5px;
+            cursor: pointer;
+        }
+        /* .btn:hover{
+            background-color: green;
+            color: #fff;
+            cursor: pointer;
+        } */
+        #btn2{
+            background-color: green;
+            color: #fff;
+           
+        }
+        /* #btn2:hover{
+            background-color: transparent;
+            color: green;
+            border: 1px solid green;
+        } */
+        ol li{
+            font-size: larger;
+            height: 30px;
+            width: 90%;
+        }
+        ol li:nth-child(4n-3){
+            background-color: rgba(255, 255, 0, 0.599);
+        }
+        ol li:nth-child(4n-2){
+            background-color: #fff;
+        }
+        ol li:nth-child(4n-1){
+            background-color: rgba(0, 255, 0, 0.686);
+        }
+        ol li:nth-child(4n){
+            background-color: #fff;
+        }
+        .x{ position: absolute;
+            left: 44%;
+            border: 0px solid transparent;
+            cursor: pointer;
+            background-color: #f00;
+            color: #fff;
+            font-weight:bold ;
+            height: 1.8rem;
+        }
+        .tasks{
+            width: 50%;
+            text-align: center;
+            border: 1px solid black;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body><div class="contener">
+    <div class="content"><h1>TO-DO List Of Amarendra</h1>
+       <div class="tasks"> <h2>TASK LIST</h2>
+        <ol>
+            
+        </ol>  </div>  
+    <div class="el">
+    <input type="text" placeholder="Enter your task name" id="inp"> <br> <div class="bt">
+    <button id="btn1" class="btn">Append</button><button id="btn2"class="btn">Prepend</button></div>
+</div>
+</div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
