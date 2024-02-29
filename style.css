@@ -1,0 +1,17 @@
+@media (max-width:650px){
+    .btn{
+        width:100%;
+        height: 50%;
+        margin-bottom: 5px;
+    }
+    .bt{
+        display: block;
+        height: 60%;
+    }
+    #inp{
+        font-size:medium;
+    }
+    .x{
+        left:42% ;
+    }
+}

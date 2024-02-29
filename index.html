@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO</title>
     <style>
+        *{
+            font-family:sans-serif;
+        }
+        body{
+            margin: 0px;
+        }
         .contener{
-            height: 97vh;
-            width: 99vw;
+            min-height: 97vh;
+            width: 100vw;
             margin: 0px;
             padding: 0px;
             background:linear-gradient(120deg, rgb(236, 62, 233),rgb(183, 209, 16));
@@ -19,7 +25,7 @@
         .content h1{
             font-size: 50px;
             text-align: center;
-            margin-top: 10px;
+            margin-top: 0px;
         }
         .el{
             position: absolute;
@@ -34,7 +40,7 @@
             width: 90%;
             height: 35%;
             border: 1px solid black;
-            background-color: transparent;
+            background-color: #fff;
             font-size: large;
             font-weight: 500;
             
@@ -75,8 +81,10 @@
         } */
         ol li{
             font-size: larger;
+            font-weight: bold;
             height: 30px;
             width: 90%;
+            list-style-type:decimal-leading-zero ;
         }
         ol li:nth-child(4n-3){
             background-color: rgba(255, 255, 0, 0.599);
@@ -105,7 +113,9 @@
             border: 1px solid black;
             background-color: transparent;
         }
+       
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body><div class="contener">
     <div class="content"><h1>TO-DO List Of Amarendra</h1>
@@ -114,8 +124,11 @@
             
         </ol>  </div>  
     <div class="el">
-    <input type="text" placeholder="Enter your task name" id="inp"> <br> <div class="bt">
-    <button id="btn1" class="btn">Append</button><button id="btn2"class="btn">Prepend</button></div>
+    <input type="text" placeholder="Enter your task" id="inp"> <br>
+    <div class="bt">
+    <button id="btn1" class="btn">Append</button>
+    <button id="btn2"class="btn">Prepend</button>
+</div>
 </div>
 </div>
 </div>
